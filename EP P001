@@ -1,0 +1,29 @@
+
+let sumOfThrees = 0;
+let sumOfFives = 0;
+let sumOfFifteens = 0;
+let totalSum = 0
+let i = 0;
+
+for (let i = 0; i < 1000; i = i + 3) {
+  sumOfThrees = sumOfThrees + i;
+  if (i > 996) {
+    console.log(i)
+  }
+}
+
+for (let j = 0; j < 1000; j = j + 5) {
+  sumOfFives = sumOfFives + j;
+  if (j > 994) {
+    console.log(j);
+  }
+}
+
+for (let k = 0; k < 1000; k = k + 15) {
+  sumOfFifteens = sumOfFifteens + k;
+}
+
+totalSum = sumOfThrees + sumOfFives - sumOfFifteens;
+
+console.log(sumOfThrees, sumOfFives, sumOfFifteens, totalSum);
+
